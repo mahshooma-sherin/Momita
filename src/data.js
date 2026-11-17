@@ -21,13 +21,17 @@ export const WEDDING_DATA = {
     }
   },
   "wedding": {
+    "bibleVerse": {
+      "text": "So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate.",
+      "reference": "Matthew 19:6"
+    },
     "dateLabel": "29 · 01 · 2027",
     "longDate": "Friday, 29 January 2027",
     "dateISO": "2027-01-29T13:00:00+05:30",
     "endISO": "2027-01-29T18:00:00+05:30",
     "salutation": "Dear Family and Friends,",
-    "invitationNote": "With the blessings of our beloved parents, Mr. Kebinath G Momin & Lt. Sanjitha K Marak and Mr. Heningson N Sangma & Mrs. Betika D Sangma, we joyfully invite you to celebrate our wedding at Bride’s Residence. Come for the vows, stay for the joy, and help us make memories to cherish forever.",
-    "scheduleNote": "Venue: At Bride’s Residence · All times are local to the venue."
+    "invitationNote": "With the blessings of our beloved parents, Mr. Kebinath G Momin & Lt. Sanjitha K Marak and Mr. Heningson N Sangma & Mrs. Betika D Sangma, we joyfully invite you to celebrate our wedding at Bride’s Residence Khamari, Tikrikilla, West Garo Hills. Come for the vows, stay for the joy, and help us make memories to cherish forever.",
+    "scheduleNote": "All times are local to the venue."
   },
   "schedule": [
     {
@@ -49,15 +53,7 @@ export const WEDDING_DATA = {
   ],
   "venue": {
     "name": "Bride’s Residence",
-    "address": "At Bride’s Residence",
-    "mapsUrl": "",
-    "timeLabel": "Friday, 29 January 2027 · 1:00 PM",
-    "sceneCaption": "A little glimpse of our celebration’s spirit",
-    "note": "We look forward to welcoming you to our home celebration."
-  },
-  "details": {
-    "dressCode": "Formal / Festive attire. Traditional wear is warmly welcomed.",
-    "giftPreference": "Your presence and blessings are our greatest gift."
+    "address": "At Bride’s Residence Khamari, Tikrikilla, West Garo Hills"
   },
   "media": {
     "openingVideo": "./media/opening.mp4",

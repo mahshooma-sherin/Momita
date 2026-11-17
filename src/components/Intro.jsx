@@ -2,10 +2,17 @@ import Decor from './Decor'
 
 export default function Intro({ data }) {
   const { groom, bride } = data.parents || {}
+  const bibleVerse = data.wedding.bibleVerse
   return (
     <section className="paper-section floral intro motion-scene" id="our-invitation" aria-label="Our invitation">
-      <h2 className="script reveal">{data.couple.subtitle}</h2>
+      {bibleVerse && (
+        <div className="bible-verse reveal">
+          <p className="verse-text">“{bibleVerse.text}”</p>
+          <p className="verse-ref">— {bibleVerse.reference}</p>
+        </div>
+      )}
       <div className="rule" aria-hidden="true"></div>
+      <h2 className="script reveal">{data.couple.subtitle}</h2>
       <p className="reveal">{data.wedding.salutation}</p>
       <p className="invitation-note reveal">{data.wedding.invitationNote}</p>
 

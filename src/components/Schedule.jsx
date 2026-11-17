@@ -11,7 +11,10 @@ export default function Schedule({ data }) {
           </li>
         ))}
       </ol>
-      <p className="schedule-note">{data.wedding.scheduleNote}</p>
+      <div className="venue-highlight reveal">
+        <span className="venue-label">Venue</span>
+        <p className="venue-address-text">{data.venue.address || data.venue.name}</p>
+      </div>
     </section>
   )
 }

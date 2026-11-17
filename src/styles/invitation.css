@@ -122,3 +122,14 @@ body{font-size:20px;line-height:1.65}.names{font-size:clamp(64px,15vw,88px);line
 .parent-names .parent-amp{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--accent);padding:0 3px}
 .parents-amp{font:400 30px/1 "Imperial Script",Parisienne,cursive;color:var(--accent);margin:2px 0}
 
+/* Bible verse */
+.bible-verse{max-width:380px;margin:0 auto 20px;text-align:center;padding:0 12px}
+.verse-text{font:italic 400 clamp(16px,4vw,19px)/1.65 "Cormorant Garamond",Georgia,serif;color:var(--ink);margin:0 0 10px;text-wrap:pretty}
+.verse-ref{font:600 13px/1.4 "Cormorant Garamond",serif;color:var(--accent);letter-spacing:.16em;text-transform:uppercase;margin:0}
+
+/* Venue mention in schedule */
+.venue-highlight{margin:36px auto 0;max-width:380px;text-align:center;padding:18px 20px;border-top:1px solid color-mix(in srgb,var(--metal) 60%,transparent);border-bottom:1px solid color-mix(in srgb,var(--metal) 60%,transparent)}
+.venue-label{display:block;font:600 12px/1.4 "Cormorant Garamond",serif;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.venue-address-text{font:500 clamp(17px,4vw,20px)/1.5 "Cormorant Garamond",Georgia,serif;color:var(--ink);margin:0}
+
+
