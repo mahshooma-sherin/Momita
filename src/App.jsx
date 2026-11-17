@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { WEDDING_DATA as data } from './data'
 import { INVITATION_THEMES } from './themes'
-import { asset, assetUrl, downloadCalendar, safeURL } from './utils'
+import { asset, assetUrl, safeURL } from './utils'
 import { useAmbience } from './hooks/useAmbience'
 import { useReveal } from './hooks/useReveal'
 import Entrance from './components/Entrance'
@@ -9,8 +9,6 @@ import Hero from './components/Hero'
 import Intro from './components/Intro'
 import Countdown from './components/Countdown'
 import Schedule from './components/Schedule'
-import Venue from './components/Venue'
-import Etiquette from './components/Etiquette'
 import Closing from './components/Closing'
 
 const theme = INVITATION_THEMES[data.theme]
@@ -263,15 +261,6 @@ export default function App() {
         <Intro data={data} />
         <Countdown data={data} />
         <Schedule data={data} />
-        <Venue
-          data={data}
-          calendarDisabled={!validDate}
-          onCalendar={() => {
-            downloadCalendar(data, date)
-            notify('Your calendar invitation has been downloaded.')
-          }}
-        />
-        <Etiquette data={data} />
         <Closing data={data} onReopen={reopen} />
       </main>
       <div className="media-controls" id="media-controls" hidden={controlsHidden}>

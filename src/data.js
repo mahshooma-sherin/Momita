@@ -26,8 +26,8 @@ export const WEDDING_DATA = {
     "dateISO": "2027-01-29T13:00:00+05:30",
     "endISO": "2027-01-29T18:00:00+05:30",
     "salutation": "Dear Family and Friends,",
-    "invitationNote": "With the blessings of our beloved parents, Mr. Kebinath G Momin & Lt. Sanjitha K Marak and Mr. Heningson N Sangma & Mrs. Betika D Sangma, we joyfully invite you to celebrate our wedding. Come for the vows, stay for the joy, and help us make memories to cherish forever.",
-    "scheduleNote": "All times are local to the venue."
+    "invitationNote": "With the blessings of our beloved parents, Mr. Kebinath G Momin & Lt. Sanjitha K Marak and Mr. Heningson N Sangma & Mrs. Betika D Sangma, we joyfully invite you to celebrate our wedding at Bride’s Residence. Come for the vows, stay for the joy, and help us make memories to cherish forever.",
+    "scheduleNote": "Venue: At Bride’s Residence · All times are local to the venue."
   },
   "schedule": [
     {
