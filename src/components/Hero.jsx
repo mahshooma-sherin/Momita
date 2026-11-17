@@ -51,8 +51,6 @@ export default function Hero({ data, theme, heroRef, heroHidden }) {
             S/O {groom?.father} &amp; {groom?.mother}
           </p>
         </div>
-
-        <a className="hero-link" href="#our-invitation">With love, you are invited</a>
       </div>
       <Decor index={0} eager />
     </section>
