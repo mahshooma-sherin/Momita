@@ -3,21 +3,21 @@
 export const WEDDING_DATA = {
   "theme": "aubergine-magnolia",
   "couple": {
-    "first": "Momita",
-    "second": "Salgring",
-    "fullNameBride": "Momita D Sangma",
+    "first": "Salgring",
+    "second": "Momita",
     "fullNameGroom": "Salgring K Marak",
+    "fullNameBride": "Momita D Sangma",
     "heroNote": "Together with their families",
     "subtitle": "Our favourite chapter begins."
   },
   "parents": {
-    "bride": {
-      "father": "Mr. Heningson N Sangma",
-      "mother": "Mrs. Betika D Sangma"
-    },
     "groom": {
       "father": "Mr. Kebinath G Momin",
       "mother": "Lt. Sanjitha K Marak"
+    },
+    "bride": {
+      "father": "Mr. Heningson N Sangma",
+      "mother": "Mrs. Betika D Sangma"
     }
   },
   "wedding": {
@@ -26,7 +26,7 @@ export const WEDDING_DATA = {
     "dateISO": "2027-01-29T13:00:00+05:30",
     "endISO": "2027-01-29T18:00:00+05:30",
     "salutation": "Dear Family and Friends,",
-    "invitationNote": "With the blessings of our beloved parents, Mr. Heningson N Sangma & Mrs. Betika D Sangma and Mr. Kebinath G Momin & Lt. Sanjitha K Marak, we joyfully invite you to celebrate our wedding. Come for the vows, stay for the joy, and help us make memories to cherish forever.",
+    "invitationNote": "With the blessings of our beloved parents, Mr. Kebinath G Momin & Lt. Sanjitha K Marak and Mr. Heningson N Sangma & Mrs. Betika D Sangma, we joyfully invite you to celebrate our wedding. Come for the vows, stay for the joy, and help us make memories to cherish forever.",
     "scheduleNote": "All times are local to the venue."
   },
   "schedule": [
