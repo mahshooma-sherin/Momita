@@ -59,13 +59,6 @@ export const WEDDING_DATA = {
     "dressCode": "Formal / Festive attire. Traditional wear is warmly welcomed.",
     "giftPreference": "Your presence and blessings are our greatest gift."
   },
-  // Add the host's email address to enable the RSVP button.
-  "rsvp": {
-    "email": "",
-    "heading": "A place in our hearts",
-    "note": "Your presence would make our day even more special. Please let us know if you can join us.",
-    "deadline": "15 January 2027"
-  },
   "media": {
     "openingVideo": "./media/opening.mp4",
     "openingPoster": "./media/opening-poster.webp",

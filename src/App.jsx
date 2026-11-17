@@ -11,7 +11,6 @@ import Countdown from './components/Countdown'
 import Schedule from './components/Schedule'
 import Venue from './components/Venue'
 import Etiquette from './components/Etiquette'
-import Rsvp from './components/Rsvp'
 import Closing from './components/Closing'
 
 const theme = INVITATION_THEMES[data.theme]
@@ -273,7 +272,6 @@ export default function App() {
           }}
         />
         <Etiquette data={data} />
-        <Rsvp data={data} />
         <Closing data={data} onReopen={reopen} />
       </main>
       <div className="media-controls" id="media-controls" hidden={controlsHidden}>

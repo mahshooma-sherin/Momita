@@ -24,7 +24,6 @@ export default function Closing({ data, onReopen }) {
           <p className="closing-names"><span>{first}</span><i>&amp;</i><span>{second}</span></p>
           <p className="closing-date">{data.wedding.dateLabel}</p>
           <p className="closing-note">The day will be beautiful.<br />Even more so with you.</p>
-          <a className="closing-rsvp" href="#rsvp-title">Join our celebration <span aria-hidden="true">↗</span></a>
         </div>
         <p className="closing-caption">A little moment. A lifetime of love.</p>
       </div>
