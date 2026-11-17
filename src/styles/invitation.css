@@ -100,15 +100,25 @@ body{font-size:20px;line-height:1.65}.names{font-size:clamp(64px,15vw,88px);line
 /* Keep the sound control reachable while the opening film is still on screen. */
 .locked .media-controls{z-index:101}
 
-/* A distinct calligraphic signature for the couple, with space for flourishes. */
-.hero .names{font-family:"Imperial Script",Parisienne,cursive;font-size:clamp(76px,19vw,110px);font-weight:400;line-height:1.02;letter-spacing:0}
-.hero .names span{padding:0 .08em .07em;white-space:nowrap}
-.hero .names i{font-family:"Cormorant Garamond",Georgia,serif;font-size:25px;line-height:1.1;margin:-3px 0 1px}
-@media(max-width:360px){.hero .names{font-size:76px}}
+/* Hero Bible Verse & Invitation Layout */
+.hero-copy{top:13.5%!important;left:8%!important;right:8%!important}
+@media(max-width:360px){.hero-copy{top:11.5%!important;left:6%!important;right:6%!important}}
 
-/* Hero supporting copy sits directly on the illustrated stationery. */
-.hero-copy .hero-note{margin:22px auto 0;max-width:240px;font-size:16px;line-height:1.5;text-shadow:0 1px 8px var(--paper),0 0 16px var(--paper)}
-.hero-copy .hero-link{margin-top:16px;font-size:11px;letter-spacing:.12em;text-shadow:0 1px 8px var(--paper)}
+.hero-verse{max-width:340px;margin:0 auto 6px;text-align:center}
+.hero-verse-text{font:italic 400 clamp(11.5px,3.1vw,14px)/1.4 "Cormorant Garamond",Georgia,serif;color:var(--ink);margin:0 0 3px;text-shadow:0 1px 8px var(--paper),0 0 16px var(--paper)}
+.hero-verse-ref{font:600 clamp(9.5px,2.4vw,11.5px)/1 "Cormorant Garamond",serif;color:var(--accent);letter-spacing:.16em;text-transform:uppercase;margin:0;text-shadow:0 1px 8px var(--paper)}
+
+.hero-divider{width:32px;height:1px;background:var(--metal);margin:7px auto 8px;opacity:.7}
+
+.hero-family-intro{font:500 clamp(12.5px,3.3vw,15.5px)/1.35 "Cormorant Garamond",Georgia,serif;letter-spacing:.05em;margin:0 0 2px;color:var(--ink);text-shadow:0 1px 8px var(--paper)}
+.hero-copy .occasion{font-size:clamp(9.5px,2.5vw,11px);letter-spacing:.18em;text-transform:uppercase;margin:0 0 5px;text-shadow:0 1px 8px var(--paper)}
+.hero-copy .date{font-size:clamp(14px,3.6vw,17px);letter-spacing:.16em;margin:0 0 8px;text-shadow:0 1px 8px var(--paper)}
+
+.hero .names{font-family:"Imperial Script",Parisienne,cursive;font-size:clamp(56px,14.5vw,85px);font-weight:400;line-height:.96;letter-spacing:0}
+.hero .names span{display:block;padding:0 .08em;white-space:nowrap}
+.hero .names i{font-family:"Cormorant Garamond",Georgia,serif;font-size:21px;line-height:1;margin:-2px 0 0}
+@media(max-width:360px){.hero .names{font-size:56px}}
+.hero-copy .hero-link{margin-top:10px;font-size:10.5px;letter-spacing:.12em;text-shadow:0 1px 8px var(--paper)}
 
 .zt-credit{display:flex;align-items:center;justify-content:center;gap:9px;width:fit-content;margin:38px auto 0;padding:8px 4px;font:500 11px/1 "Cormorant Garamond",serif;letter-spacing:.22em;text-transform:uppercase;color:var(--closing-line);text-decoration:none;opacity:.85;transition:opacity .25s ease}.zt-credit:hover,.zt-credit:focus-visible{opacity:1}.zt-credit svg{width:15px;height:15px;flex:none}.zt-credit strong{font-weight:600;color:var(--ink);letter-spacing:.2em}.zt-credit:hover strong{text-decoration:underline;text-underline-offset:4px}
 

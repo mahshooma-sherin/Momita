@@ -3,21 +3,21 @@
 export const WEDDING_DATA = {
   "theme": "aubergine-magnolia",
   "couple": {
-    "first": "Salgring",
-    "second": "Momita",
-    "fullNameGroom": "Salgring K Marak",
+    "first": "Momita",
+    "second": "Salgring",
     "fullNameBride": "Momita D Sangma",
-    "heroNote": "Together with their families",
+    "fullNameGroom": "Salgring K Marak",
+    "heroNote": "Together with our families",
     "subtitle": "Our favourite chapter begins."
   },
   "parents": {
-    "groom": {
-      "father": "Mr. Kebinath G Momin",
-      "mother": "Lt. Sanjitha K Marak"
-    },
     "bride": {
       "father": "Mr. Heningson N Sangma",
       "mother": "Mrs. Betika D Sangma"
+    },
+    "groom": {
+      "father": "Mr. Kebinath G Momin",
+      "mother": "Lt. Sanjitha K Marak"
     }
   },
   "wedding": {
@@ -30,7 +30,7 @@ export const WEDDING_DATA = {
     "dateISO": "2027-01-29T13:00:00+05:30",
     "endISO": "2027-01-29T18:00:00+05:30",
     "salutation": "Dear Family and Friends,",
-    "invitationNote": "With the blessings of our beloved parents, Mr. Kebinath G Momin & Lt. Sanjitha K Marak and Mr. Heningson N Sangma & Mrs. Betika D Sangma, we joyfully invite you to celebrate our wedding at Bride’s Residence Khamari, Tikrikilla, West Garo Hills. Come for the vows, stay for the joy, and help us make memories to cherish forever.",
+    "invitationNote": "With the blessings of our beloved parents, Mr. Heningson N Sangma & Mrs. Betika D Sangma and Mr. Kebinath G Momin & Lt. Sanjitha K Marak, we joyfully invite you to celebrate our wedding at Bride’s Residence Khamari, Tikrikilla, West Garo Hills. Come for the vows, stay for the joy, and help us make memories to cherish forever.",
     "scheduleNote": "All times are local to the venue."
   },
   "schedule": [
