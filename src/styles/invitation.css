@@ -1574,54 +1574,71 @@ p {
     z-index: 101
 }
 
-/* Hero Page (Page 1) matching reference */
-.hero-copy{top:9.5%!important;left:5%!important;right:5%!important}
-@media(max-width:360px){.hero-copy{top:8%!important;left:4%!important;right:4%!important}}
+/* Hero Page (Page 1) harmonious arrangement */
+.hero-copy {
+    position: absolute;
+    top: 15% !important;
+    left: 11% !important;
+    right: 11% !important;
+    width: auto !important;
+    max-width: 440px !important;
+    margin: 0 auto !important;
+    text-align: center;
+}
 
-@media(max-width:360px) {
+@media(max-width: 380px) {
     .hero-copy {
-        top: 6.5% !important;
-        left: 4% !important;
-        right: 4% !important
+        top: 13.5% !important;
+        left: 8% !important;
+        right: 8% !important;
     }
 }
 
 .hero-verse {
-    max-width: 380px;
-    margin: 0 auto 8px;
-    text-align: center
+    max-width: 360px;
+    margin: 0 auto 10px;
+    text-align: center;
 }
 
 .hero-verse-text {
-    font: italic 400 clamp(11px, 2.8vw, 14px)/1.4 "Cormorant Garamond", Georgia, serif;
+    font: italic 400 clamp(12.5px, 3.2vw, 15px)/1.5 "Cormorant Garamond", Georgia, serif;
     color: var(--ink);
-    margin: 0 0 2px;
+    margin: 0 0 3px;
     text-shadow: 0 1px 8px var(--paper), 0 0 16px var(--paper);
-    text-wrap: pretty
+    text-wrap: pretty;
 }
 
 .hero-verse-ref {
-    font: italic 400 clamp(11px, 2.8vw, 14px)/1.3 "Cormorant Garamond", Georgia, serif;
-    color: var(--ink);
-    text-align: right;
-    margin: 0 14px 0 0;
-    text-shadow: 0 1px 8px var(--paper)
+    font: 600 clamp(10.5px, 2.6vw, 12px)/1.3 "Cormorant Garamond", serif;
+    color: var(--accent);
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    margin: 0;
+    text-shadow: 0 1px 8px var(--paper);
+}
+
+.hero-divider {
+    width: 36px;
+    height: 1px;
+    background: var(--metal);
+    margin: 12px auto 14px;
+    opacity: .75;
 }
 
 .hero-families-title {
-    font: 500 clamp(12.5px, 3.1vw, 16.5px)/1.2 "Cormorant Garamond", Georgia, serif;
-    letter-spacing: .15em;
+    font: 500 clamp(13px, 3.4vw, 17px)/1.3 "Cormorant Garamond", Georgia, serif;
+    letter-spacing: .18em;
     text-transform: uppercase;
     color: var(--ink);
-    margin: 10px 0 2px;
-    text-shadow: 0 1px 8px var(--paper)
+    margin: 0 0 4px;
+    text-shadow: 0 1px 8px var(--paper);
 }
 
 .hero-joyfully-invite {
-    font: italic 400 clamp(13.5px, 3.5vw, 18px)/1.25 "Cormorant Garamond", Georgia, serif;
+    font: italic 400 clamp(15px, 3.8vw, 20px)/1.3 "Cormorant Garamond", Georgia, serif;
     color: var(--ink);
-    margin: 0 0 6px;
-    text-shadow: 0 1px 8px var(--paper)
+    margin: 0 0 14px;
+    text-shadow: 0 1px 8px var(--paper);
 }
 
 .hero-wedding-badge {
@@ -1629,127 +1646,53 @@ p {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto 6px
+    margin: 0 auto 16px;
 }
 
 .hero-wedding-text {
-    font: 400 clamp(42px, 10.5vw, 62px)/.85 "Imperial Script", Parisienne, cursive;
+    font: 400 clamp(48px, 12vw, 68px)/.9 "Imperial Script", Parisienne, cursive;
     color: var(--accent);
-    display: block
+    display: block;
 }
 
 .hero-of-pill {
     display: inline-block;
-    font: italic 400 11px/1 "Cormorant Garamond", serif;
+    font: italic 400 12px/1 "Cormorant Garamond", serif;
     color: var(--accent);
     border: 1px solid var(--accent);
     border-radius: 12px;
-    padding: 1px 7px;
+    padding: 1px 8px;
     margin-top: -6px;
     background: color-mix(in srgb, var(--paper) 85%, white);
-    letter-spacing: .05em
+    letter-spacing: .06em;
 }
 
 .hero-person-block {
-    margin: 2px auto
+    margin: 4px auto;
 }
 
 .hero-person-name {
-    font: 400 clamp(35px, 8.8vw, 50px)/1.05 "Imperial Script", Parisienne, cursive;
+    font: 400 clamp(38px, 9.8vw, 56px)/1.1 "Imperial Script", Parisienne, cursive;
     color: var(--accent);
-    margin: 0 0 1px;
+    margin: 0 0 3px;
     letter-spacing: .01em;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 .hero-person-parents {
-    font: italic 400 clamp(11.5px, 2.8vw, 14px)/1.35 "Cormorant Garamond", Georgia, serif;
+    font: italic 400 clamp(12.5px, 3.2vw, 15.5px)/1.4 "Cormorant Garamond", Georgia, serif;
     color: var(--ink);
     margin: 0;
     letter-spacing: .02em;
-    text-shadow: 0 1px 8px var(--paper)
+    text-shadow: 0 1px 8px var(--paper);
 }
 
 .hero-amp {
-    font: 400 clamp(22px, 5.5vw, 30px)/1.1 "Imperial Script", Parisienne, cursive;
+    font: 400 clamp(26px, 6.5vw, 36px)/1.2 "Imperial Script", Parisienne, cursive;
     color: var(--accent);
-    margin: 2px auto
+    margin: 6px auto;
 }
 
-.hero-copy .hero-link {
-    margin-top: 8px;
-    font-size: 10px;
-    letter-spacing: .12em;
-    text-shadow: 0 1px 8px var(--paper);
-    text-transform: uppercase;
-    border-bottom: 1px solid currentColor;
-    text-decoration: none
-}
-
-.hero-divider {
-    width: 32px;
-    height: 1px;
-    background: var(--metal);
-    margin: 7px auto 8px;
-    opacity: .7
-}
-
-.hero-family-intro {
-    font: 500 clamp(12.5px, 3.3vw, 15.5px)/1.35 "Cormorant Garamond", Georgia, serif;
-    letter-spacing: .05em;
-    margin: 0 0 2px;
-    color: var(--ink);
-    text-shadow: 0 1px 8px var(--paper)
-}
-
-.hero-copy .occasion {
-    font-size: clamp(9.5px, 2.5vw, 11px);
-    letter-spacing: .18em;
-    text-transform: uppercase;
-    margin: 0 0 5px;
-    text-shadow: 0 1px 8px var(--paper)
-}
-
-.hero-copy .date {
-    font-size: clamp(14px, 3.6vw, 17px);
-    letter-spacing: .16em;
-    margin: 0 0 8px;
-    text-shadow: 0 1px 8px var(--paper)
-}
-
-.hero .names {
-    font-family: "Imperial Script", Parisienne, cursive;
-    font-size: clamp(56px, 14.5vw, 85px);
-    font-weight: 400;
-    line-height: .96;
-    letter-spacing: 0
-}
-
-.hero .names span {
-    display: block;
-    padding: 0 .08em;
-    white-space: nowrap
-}
-
-.hero .names i {
-    font-family: "Cormorant Garamond", Georgia, serif;
-    font-size: 21px;
-    line-height: 1;
-    margin: -2px 0 0
-}
-
-@media(max-width:360px) {
-    .hero .names {
-        font-size: 56px
-    }
-}
-
-.hero-copy .hero-link {
-    margin-top: 10px;
-    font-size: 10.5px;
-    letter-spacing: .12em;
-    text-shadow: 0 1px 8px var(--paper)
-}
 
 .zt-credit {
     display: flex;

@@ -18,11 +18,13 @@ export default function Hero({ data, theme, heroRef, heroHidden }) {
           <div className="hero-verse">
             <p className="hero-verse-text">
               “So they are no longer two, but one flesh.<br />
-              Therefore what God has joined together, let no one separate.
+              Therefore what God has joined together, let no one separate.”
             </p>
-            <p className="hero-verse-ref">” {bibleVerse.reference}</p>
+            <p className="hero-verse-ref">— {bibleVerse.reference} —</p>
           </div>
         )}
+
+        <div className="hero-divider" aria-hidden="true"></div>
 
         <h2 className="hero-families-title">TOGETHER WITH OUR FAMILIES</h2>
         <p className="hero-joyfully-invite">We joyfully invite you to the</p>
