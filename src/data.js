@@ -8,7 +8,7 @@ export const WEDDING_DATA = {
     "fullNameBride": "Momita D Sangma",
     "fullNameGroom": "Salgring K Marak",
     "heroNote": "Together with our families",
-    "subtitle": "Our favourite chapter begins."
+    "subtitle": "Two families, one beautiful beginning."
   },
   "parents": {
     "bride": {
@@ -29,8 +29,9 @@ export const WEDDING_DATA = {
     "longDate": "Friday, 29 January 2027",
     "dateISO": "2027-01-29T13:00:00+05:30",
     "endISO": "2027-01-29T18:00:00+05:30",
-    "salutation": "Dear Family and Friends,",
-    "invitationNote": "With the blessings of our beloved parents, Mr. Heningson N Sangma & Mrs. Betika D Sangma and Mr. Kebinath G Momin & Lt. Sanjitha K Marak, we joyfully invite you to celebrate our wedding at Bride’s Residence Khamari, Tikrikilla, West Garo Hills. Come for the vows, stay for the joy, and help us make memories to cherish forever.",
+    "salutation": "Dear friends and family,",
+    "invitationNote": "Love brought us together, and faith will keep us together. We would be so honoured if you joined us as we say our vows and begin forever, together.",
+    "eventBanner": "FRIDAY 29 JANUARY 2027 | KHAMARI, TIKRIKILLA",
     "scheduleNote": "All times are local to the venue."
   },
   "schedule": [
