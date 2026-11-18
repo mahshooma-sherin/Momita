@@ -20,7 +20,7 @@ export default function Hero({ data, theme, heroRef, heroHidden }) {
               “So they are no longer two, but one flesh.<br />
               Therefore what God has joined together, let no one separate.”
             </p>
-            <p className="hero-verse-ref">{bibleVerse.reference}</p>
+            <p className="hero-verse-ref">-Matthew 19:6</p>
           </div>
         )}
 
@@ -52,6 +52,34 @@ export default function Hero({ data, theme, heroRef, heroHidden }) {
           </p>
         </div>
       </div>
+
+      {/* Scroll indicator on terrace steps as requested */}
+      <a
+        href="#our-invitation"
+        className="hero-scroll-cue"
+        aria-label="Scroll down to explore invitation"
+        onClick={(e) => {
+          e.preventDefault()
+          document.getElementById('our-invitation')?.scrollIntoView({ behavior: 'smooth' })
+        }}
+      >
+        <span className="hero-scroll-label">Scroll to explore</span>
+        <svg
+          className="hero-scroll-arrow"
+          viewBox="0 0 24 24"
+          width="18"
+          height="18"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
+
       <Decor index={0} eager />
     </section>
   )
