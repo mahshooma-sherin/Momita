@@ -14,8 +14,6 @@ export default function Intro({ data }) {
           We would be so honoured if you joined us as we say our vows and begin forever, together.
         </p>
       </div>
-      <div className="rule" aria-hidden="true"></div>
-      <p className="invitation-date-venue reveal">KHAMARI, TIKRIKILLA</p>
       <Decor index={1} />
     </section>
   )

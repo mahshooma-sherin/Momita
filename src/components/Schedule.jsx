@@ -13,13 +13,6 @@ export default function Schedule({ data }) {
       </ol>
 
       <div className="schedule-info-card reveal">
-        <div className="schedule-reception-badge">
-          <p className="reception-heading">RECEPTION TO FOLLOW</p>
-          <p className="reception-timing">Till 7:00 PM</p>
-        </div>
-
-        <div className="schedule-card-divider" aria-hidden="true"></div>
-
         <div className="venue-highlight">
           <span className="venue-label">Venue</span>
           <p className="venue-address-text">{data.venue.address || data.venue.name}</p>
