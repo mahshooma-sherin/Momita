@@ -7,7 +7,10 @@ export default function Schedule({ data }) {
           <li className="reveal" key={i}>
             <time>{event.time}</time>
             <span className="event-marker" aria-hidden="true"></span>
-            <span className="event-name">{event.title}</span>
+            <span className="event-name">
+              <span>{event.title}</span>
+              {event.note && <span className="event-note">{event.note}</span>}
+            </span>
           </li>
         ))}
       </ol>

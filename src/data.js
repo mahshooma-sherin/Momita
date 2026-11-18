@@ -44,8 +44,9 @@ export const WEDDING_DATA = {
       "time": "1:00 PM"
     },
     {
-      "title": "Reception & feast",
-      "time": "2:30 PM"
+      "title": "Reception to follow",
+      "time": "2:30 PM",
+      "note": "Till 7:00 PM"
     },
     {
       "title": "Celebration & memories",

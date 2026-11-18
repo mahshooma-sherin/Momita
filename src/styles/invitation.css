@@ -422,8 +422,17 @@ video[hidden],
 
 .timeline .event-name {
     font-size: 20px;
-    line-height: 1.4;
-    padding-left: 8px
+    line-height: 1.35;
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline .event-note {
+    font: italic 400 clamp(13px, 3.2vw, 15px)/1.25 "Cormorant Garamond", Georgia, serif;
+    color: var(--accent);
+    margin-top: 2px;
+    letter-spacing: .02em;
 }
 
 .schedule-note {
