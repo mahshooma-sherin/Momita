@@ -16,6 +16,21 @@ export default function Hero({ data, theme, heroRef, heroHidden }) {
       <div className="hero-copy">
         {bibleVerse && (
           <div className="hero-verse">
+            <div className="hero-cross-wrap" aria-hidden="true">
+              <img
+                src={asset('cross.webp')}
+                alt=""
+                className="hero-cross"
+                width="42"
+                height="68"
+                loading="eager"
+                decoding="async"
+                onError={(e) => {
+                  e.currentTarget.onerror = null
+                  e.currentTarget.src = '/images/cross.png'
+                }}
+              />
+            </div>
             <p className="hero-verse-text">
               “So they are no longer two, but one flesh.<br />
               Therefore what God has joined together, let no one separate.”

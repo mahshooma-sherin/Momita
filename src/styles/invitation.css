@@ -1617,6 +1617,20 @@ p {
     text-align: center;
 }
 
+.hero-cross-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 8px;
+}
+
+.hero-cross {
+    width: clamp(34px, 8.5vw, 46px);
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.16)) drop-shadow(0 0 14px rgba(255, 255, 255, 0.95));
+}
+
 .hero-verse-text {
     font: 400 clamp(19px, 4.8vw, 25px)/1.32 "Imperial Script", Parisienne, cursive;
     color: #5d2238;
