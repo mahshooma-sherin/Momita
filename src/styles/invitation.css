@@ -1828,23 +1828,34 @@ p {
     color: var(--ink);
 }
 
-/* Venue Section - Clean borderless calligraphy matching Image 1 */
+/* Venue Section - Clean borderless calligraphy matching reference */
+.closing-venue-wrap {
+    position: relative;
+    padding: 32px 18px 24px;
+    background: var(--paper);
+    z-index: 1;
+    text-align: center;
+}
+
 .venue-highlight {
     margin: 0 auto;
-    max-width: 480px;
+    max-width: 540px;
     padding: 0;
-    border: none;
+    border: none !important;
     background: transparent;
     text-align: center;
 }
 
 .venue-calligraphy {
-    font: 400 clamp(44px, 11vw, 62px)/1.2 "Imperial Script", cursive;
-    color: var(--accent);
+    font: 400 clamp(28px, 7vw, 42px)/1.36 "Parisienne", cursive;
+    color: #461626;
     margin: 0;
     text-align: center;
     letter-spacing: .01em;
     text-wrap: balance;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 0 0 1px rgba(70, 22, 38, 0.35);
 }
 
 .venue-calligraphy-gap {
@@ -1981,15 +1992,7 @@ p {
     margin: 0
 }
 
-/* Venue mention in schedule */
-.venue-highlight {
-    margin: 36px auto 0;
-    max-width: 380px;
-    text-align: center;
-    padding: 18px 20px;
-    border-top: 1px solid color-mix(in srgb, var(--metal) 60%, transparent);
-    border-bottom: 1px solid color-mix(in srgb, var(--metal) 60%, transparent)
-}
+/* (Legacy venue styles removed) */
 
 .venue-label {
     display: block;
