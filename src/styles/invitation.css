@@ -1828,26 +1828,26 @@ p {
     color: var(--ink);
 }
 
-/* Venue Section - Clean borderless calligraphy matching reference */
+/* Venue Section - Matching reference image exactly */
 .closing-venue-wrap {
     position: relative;
-    padding: 32px 18px 24px;
+    padding: 42px 20px 38px;
     background: var(--paper);
     z-index: 1;
     text-align: center;
+    border-top: 1px solid color-mix(in srgb, var(--metal) 60%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, var(--metal) 60%, transparent);
 }
 
 .venue-highlight {
     margin: 0 auto;
-    max-width: 540px;
+    max-width: 480px;
     padding: 0;
-    border: none !important;
-    background: transparent;
     text-align: center;
 }
 
 .venue-calligraphy {
-    font: 400 clamp(48px, 12vw, 68px)/1.18 "Imperial Script", cursive;
+    font: 400 clamp(40px, 10vw, 56px)/1.2 "Imperial Script", cursive;
     color: var(--accent);
     margin: 0;
     text-align: center;
@@ -1855,11 +1855,10 @@ p {
     text-wrap: balance;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-shadow: 0 0 0.4px currentColor;
 }
 
 .venue-calligraphy-gap {
-    height: 18px;
+    height: 24px;
 }
 
 
