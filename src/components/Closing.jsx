@@ -28,20 +28,18 @@ export default function Closing({ data, onReopen }) {
         <p className="closing-caption">A little moment. A lifetime of love.</p>
       </div>
 
-      {/* Venue card placed after 'The beginning of our forever' as requested */}
+      {/* Venue section placed after 'The beginning of our forever' as requested */}
       <div className="closing-venue-wrap reveal">
-        <div className="schedule-info-card">
-          <div className="venue-highlight">
-            <p className="venue-calligraphy">
-              At Bride’s Residence Khamari,<br />
-              Tikrikilla, West Garo Hills.
-            </p>
-            <div className="venue-calligraphy-gap" aria-hidden="true"></div>
-            <p className="venue-calligraphy">
-              Reception to follow<br />
-              Till 7:00 PM
-            </p>
-          </div>
+        <div className="venue-highlight">
+          <p className="venue-calligraphy">
+            At Bride’s Residence Khamari,<br />
+            Tikrikilla, West Garo Hills.
+          </p>
+          <div className="venue-calligraphy-gap" aria-hidden="true"></div>
+          <p className="venue-calligraphy">
+            Reception to follow<br />
+            Till 7:00 PM
+          </p>
         </div>
       </div>
 

@@ -1499,13 +1499,10 @@ p {
 
 .closing-venue-wrap {
     position: relative;
-    padding: 28px 20px 24px;
+    padding: 36px 20px 28px;
     background: var(--paper);
     z-index: 1;
-}
-
-.closing-venue-wrap .schedule-info-card {
-    margin: 0 auto;
+    text-align: center;
 }
 
 .closing-colophon {
@@ -1763,29 +1760,18 @@ p {
     color: var(--ink);
 }
 
-/* Schedule / Venue Information Card matching Image 1 */
-.schedule-info-card {
-    margin: 40px auto 0;
-    max-width: 440px;
-    background: color-mix(in srgb, var(--paper) 80%, white);
-    border: 1.5px solid color-mix(in srgb, var(--accent) 35%, var(--metal));
-    border-radius: 22px;
-    padding: 34px 20px;
-    box-shadow: 
-        inset 0 0 0 3.5px #ffffff,
-        inset 0 0 0 5px color-mix(in srgb, var(--accent) 20%, transparent),
-        0 10px 28px color-mix(in srgb, var(--accent) 12%, transparent);
+/* Venue Section - Clean borderless calligraphy matching Image 1 */
+.venue-highlight {
+    margin: 0 auto;
+    max-width: 480px;
+    padding: 0;
+    border: none;
+    background: transparent;
     text-align: center;
 }
 
-.schedule-info-card .venue-highlight {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-
 .venue-calligraphy {
-    font: 400 clamp(42px, 10.5vw, 58px)/1.18 "Imperial Script", cursive;
+    font: 400 clamp(44px, 11vw, 62px)/1.2 "Imperial Script", cursive;
     color: var(--accent);
     margin: 0;
     text-align: center;
@@ -1794,7 +1780,7 @@ p {
 }
 
 .venue-calligraphy-gap {
-    height: 20px;
+    height: 22px;
 }
 
 
