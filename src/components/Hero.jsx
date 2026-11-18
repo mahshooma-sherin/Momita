@@ -51,21 +51,6 @@ export default function Hero({ data, theme, heroRef, heroHidden }) {
             S/O {groom?.father} &amp; {groom?.mother}
           </p>
         </div>
-
-        <div className="hero-date-card">
-          <div className="date-col date-col-day">FRIDAY</div>
-          <div className="date-col date-col-center">
-            <span className="date-month">JANUARY</span>
-            <span className="date-num">29</span>
-            <span className="date-year">2027</span>
-          </div>
-          <div className="date-col date-col-time">1:00 PM</div>
-        </div>
-
-        <div className="hero-reception">
-          <p className="reception-title">Reception to follow</p>
-          <p className="reception-time">Till 7:00 PM</p>
-        </div>
       </div>
       <Decor index={0} eager />
     </section>
