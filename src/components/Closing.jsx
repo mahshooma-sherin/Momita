@@ -37,8 +37,7 @@ export default function Closing({ data, onReopen }) {
           </p>
           <div className="venue-calligraphy-gap" aria-hidden="true"></div>
           <p className="venue-calligraphy">
-            Reception to follow<br />
-            Till 7:00 PM
+            Reception
           </p>
         </div>
       </div>

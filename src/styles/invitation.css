@@ -1847,19 +1847,19 @@ p {
 }
 
 .venue-calligraphy {
-    font: 400 clamp(28px, 7vw, 42px)/1.36 "Parisienne", cursive;
-    color: #461626;
+    font: 400 clamp(48px, 12vw, 68px)/1.18 "Imperial Script", cursive;
+    color: var(--accent);
     margin: 0;
     text-align: center;
     letter-spacing: .01em;
     text-wrap: balance;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-shadow: 0 0 1px rgba(70, 22, 38, 0.35);
+    text-shadow: 0 0 0.4px currentColor;
 }
 
 .venue-calligraphy-gap {
-    height: 22px;
+    height: 18px;
 }
 
 
