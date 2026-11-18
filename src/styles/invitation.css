@@ -1577,31 +1577,31 @@ p {
 /* Hero Page (Page 1) harmonious arrangement */
 .hero-copy {
     position: absolute;
-    top: 15% !important;
-    left: 11% !important;
-    right: 11% !important;
+    top: 9.5% !important;
+    left: 6% !important;
+    right: 6% !important;
     width: auto !important;
-    max-width: 440px !important;
+    max-width: 420px !important;
     margin: 0 auto !important;
     text-align: center;
 }
 
 @media(max-width: 380px) {
     .hero-copy {
-        top: 13.5% !important;
-        left: 8% !important;
-        right: 8% !important;
+        top: 8% !important;
+        left: 4% !important;
+        right: 4% !important;
     }
 }
 
 .hero-verse {
-    max-width: 360px;
-    margin: 0 auto 10px;
+    max-width: 340px;
+    margin: 0 auto 8px;
     text-align: center;
 }
 
 .hero-verse-text {
-    font: italic 400 clamp(12.5px, 3.2vw, 15px)/1.5 "Cormorant Garamond", Georgia, serif;
+    font: italic 400 clamp(11.5px, 2.9vw, 14px)/1.45 "Cormorant Garamond", Georgia, serif;
     color: var(--ink);
     margin: 0 0 3px;
     text-shadow: 0 1px 8px var(--paper), 0 0 16px var(--paper);
@@ -1609,7 +1609,7 @@ p {
 }
 
 .hero-verse-ref {
-    font: 600 clamp(10.5px, 2.6vw, 12px)/1.3 "Cormorant Garamond", serif;
+    font: 600 clamp(10px, 2.5vw, 11.5px)/1 "Cormorant Garamond", serif;
     color: var(--accent);
     letter-spacing: .16em;
     text-transform: uppercase;
@@ -1617,70 +1617,56 @@ p {
     text-shadow: 0 1px 8px var(--paper);
 }
 
-.hero-divider {
-    width: 36px;
-    height: 1px;
-    background: var(--metal);
-    margin: 12px auto 14px;
-    opacity: .75;
-}
-
 .hero-families-title {
-    font: 500 clamp(13px, 3.4vw, 17px)/1.3 "Cormorant Garamond", Georgia, serif;
-    letter-spacing: .18em;
+    font: 500 clamp(12px, 3vw, 15.5px)/1.2 "Cormorant Garamond", Georgia, serif;
+    letter-spacing: .16em;
     text-transform: uppercase;
     color: var(--ink);
-    margin: 0 0 4px;
+    margin: 10px 0 2px;
     text-shadow: 0 1px 8px var(--paper);
 }
 
 .hero-joyfully-invite {
-    font: italic 400 clamp(15px, 3.8vw, 20px)/1.3 "Cormorant Garamond", Georgia, serif;
+    font: italic 400 clamp(13px, 3.3vw, 17px)/1.25 "Cormorant Garamond", Georgia, serif;
     color: var(--ink);
-    margin: 0 0 14px;
+    margin: 0 0 6px;
     text-shadow: 0 1px 8px var(--paper);
 }
 
-.hero-wedding-badge {
-    position: relative;
-    display: inline-flex;
+.hero-wedding-wrap {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto 16px;
+    margin: 0 auto 6px;
 }
 
 .hero-wedding-text {
-    font: 400 clamp(48px, 12vw, 68px)/.9 "Imperial Script", Parisienne, cursive;
+    font: 400 clamp(38px, 9.5vw, 56px)/.85 "Imperial Script", Parisienne, cursive;
     color: var(--accent);
     display: block;
 }
 
-.hero-of-pill {
-    display: inline-block;
-    font: italic 400 12px/1 "Cormorant Garamond", serif;
+.hero-of-text {
+    font: italic 400 clamp(12.5px, 3.1vw, 14.5px)/1 "Cormorant Garamond", Georgia, serif;
     color: var(--accent);
-    border: 1px solid var(--accent);
-    border-radius: 12px;
-    padding: 1px 8px;
-    margin-top: -6px;
-    background: color-mix(in srgb, var(--paper) 85%, white);
+    margin-top: -2px;
     letter-spacing: .06em;
 }
 
 .hero-person-block {
-    margin: 4px auto;
+    margin: 2px auto;
 }
 
 .hero-person-name {
-    font: 400 clamp(38px, 9.8vw, 56px)/1.1 "Imperial Script", Parisienne, cursive;
+    font: 400 clamp(34px, 8.5vw, 48px)/1.05 "Imperial Script", Parisienne, cursive;
     color: var(--accent);
-    margin: 0 0 3px;
+    margin: 0 0 1px;
     letter-spacing: .01em;
     white-space: nowrap;
 }
 
 .hero-person-parents {
-    font: italic 400 clamp(12.5px, 3.2vw, 15.5px)/1.4 "Cormorant Garamond", Georgia, serif;
+    font: italic 400 clamp(11.5px, 2.8vw, 14px)/1.35 "Cormorant Garamond", Georgia, serif;
     color: var(--ink);
     margin: 0;
     letter-spacing: .02em;
@@ -1688,10 +1674,97 @@ p {
 }
 
 .hero-amp {
-    font: 400 clamp(26px, 6.5vw, 36px)/1.2 "Imperial Script", Parisienne, cursive;
+    font: 400 clamp(20px, 5vw, 26px)/1.1 "Imperial Script", Parisienne, cursive;
     color: var(--accent);
-    margin: 6px auto;
+    margin: 2px auto;
 }
+
+/* Date Card matching Image 2 */
+.hero-date-card {
+    background: color-mix(in srgb, var(--paper) 92%, white);
+    border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--metal));
+    border-radius: 14px;
+    padding: 7px 12px;
+    max-width: 300px;
+    margin: 9px auto 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 16px color-mix(in srgb, var(--accent) 8%, transparent);
+}
+
+.date-col {
+    flex: 1;
+    text-align: center;
+}
+
+.date-col-day {
+    font: 600 clamp(10px, 2.5vw, 11.5px)/1.2 "Cormorant Garamond", Georgia, serif;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--ink);
+}
+
+.date-col-center {
+    border-left: 1px solid color-mix(in srgb, var(--accent) 35%, var(--metal));
+    border-right: 1px solid color-mix(in srgb, var(--accent) 35%, var(--metal));
+    padding: 1px 8px;
+    margin: 0 6px;
+}
+
+.date-month {
+    font: 600 clamp(9.5px, 2.3vw, 11px)/1 "Cormorant Garamond", serif;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 1px;
+}
+
+.date-num {
+    font: 400 clamp(28px, 7vw, 36px)/1 "Cormorant Garamond", Georgia, serif;
+    color: var(--accent);
+    display: block;
+    margin: 1px 0;
+}
+
+.date-year {
+    font: 600 clamp(9.5px, 2.3vw, 11px)/1 "Cormorant Garamond", serif;
+    letter-spacing: .16em;
+    color: var(--ink);
+    display: block;
+    margin-top: 1px;
+}
+
+.date-col-time {
+    font: 600 clamp(10px, 2.5vw, 11.5px)/1.2 "Cormorant Garamond", Georgia, serif;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink);
+}
+
+/* Reception to follow */
+.hero-reception {
+    margin: 5px auto 0;
+    text-align: center;
+}
+
+.reception-title {
+    font: 600 clamp(11px, 2.8vw, 13px)/1.2 "Cormorant Garamond", Georgia, serif;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin: 0 0 1px;
+    text-shadow: 0 1px 8px var(--paper);
+}
+
+.reception-time {
+    font: italic 400 clamp(11.5px, 2.9vw, 14px)/1.2 "Cormorant Garamond", Georgia, serif;
+    color: var(--accent);
+    margin: 0;
+    text-shadow: 0 1px 8px var(--paper);
+}
+
 
 
 .zt-credit {

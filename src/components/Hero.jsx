@@ -20,18 +20,16 @@ export default function Hero({ data, theme, heroRef, heroHidden }) {
               “So they are no longer two, but one flesh.<br />
               Therefore what God has joined together, let no one separate.”
             </p>
-            <p className="hero-verse-ref">— {bibleVerse.reference} —</p>
+            <p className="hero-verse-ref">{bibleVerse.reference}</p>
           </div>
         )}
-
-        <div className="hero-divider" aria-hidden="true"></div>
 
         <h2 className="hero-families-title">TOGETHER WITH OUR FAMILIES</h2>
         <p className="hero-joyfully-invite">We joyfully invite you to the</p>
 
-        <div className="hero-wedding-badge">
+        <div className="hero-wedding-wrap">
           <span className="hero-wedding-text">wedding</span>
-          <span className="hero-of-pill">-of-</span>
+          <span className="hero-of-text">of</span>
         </div>
 
         <div className="hero-person-block">
@@ -52,6 +50,21 @@ export default function Hero({ data, theme, heroRef, heroHidden }) {
           <p className="hero-person-parents">
             S/O {groom?.father} &amp; {groom?.mother}
           </p>
+        </div>
+
+        <div className="hero-date-card">
+          <div className="date-col date-col-day">FRIDAY</div>
+          <div className="date-col date-col-center">
+            <span className="date-month">JANUARY</span>
+            <span className="date-num">29</span>
+            <span className="date-year">2027</span>
+          </div>
+          <div className="date-col date-col-time">1:00 PM</div>
+        </div>
+
+        <div className="hero-reception">
+          <p className="reception-title">Reception to follow</p>
+          <p className="reception-time">Till 7:00 PM</p>
         </div>
       </div>
       <Decor index={0} eager />
