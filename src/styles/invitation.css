@@ -1774,12 +1774,12 @@ p {
 }
 
 .venue-calligraphy {
-    font: italic 400 clamp(19px, 4.8vw, 24px)/1.5 "Cormorant Garamond", Georgia, serif;
+    font: 400 clamp(23px, 5.8vw, 30px)/1.5 Parisienne, cursive;
     color: var(--accent);
     margin: 0;
     text-align: center;
-    letter-spacing: .01em;
-    text-wrap: pretty;
+    letter-spacing: .02em;
+    text-wrap: balance;
 }
 
 .venue-calligraphy-gap {
