@@ -15,7 +15,7 @@ export default function Intro({ data }) {
         </p>
       </div>
       <div className="rule" aria-hidden="true"></div>
-      <p className="invitation-date-venue reveal">FRIDAY 29 JANUARY 2027 &nbsp;|&nbsp; KHAMARI, TIKRIKILLA</p>
+      <p className="invitation-date-venue reveal">KHAMARI, TIKRIKILLA</p>
       <Decor index={1} />
     </section>
   )
