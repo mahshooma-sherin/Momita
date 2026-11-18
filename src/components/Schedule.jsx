@@ -17,8 +17,15 @@ export default function Schedule({ data }) {
 
       <div className="schedule-info-card reveal">
         <div className="venue-highlight">
-          <span className="venue-label">Venue</span>
-          <p className="venue-address-text">{data.venue.address || data.venue.name}</p>
+          <p className="venue-calligraphy">
+            At Bride’s Residence Khamari,<br />
+            Tikrikilla, West Garo Hills.
+          </p>
+          <div className="venue-calligraphy-gap" aria-hidden="true"></div>
+          <p className="venue-calligraphy">
+            Reception to follow<br />
+            Till 7:00 PM
+          </p>
         </div>
       </div>
     </section>

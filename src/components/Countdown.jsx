@@ -16,7 +16,7 @@ export default function Countdown({ data }) {
     return () => clearInterval(id)
   }, [])
 
-  // Draw cute foil on canvas once mounted
+  // Draw circular rose gold glitter foil on canvas
   useEffect(() => {
     if (revealed) return
     const canvas = canvasRef.current
@@ -24,83 +24,75 @@ export default function Countdown({ data }) {
     const ctx = canvas.getContext('2d')
 
     const draw = () => {
-      const width = (canvas.width = canvas.offsetWidth || 345)
-      const height = (canvas.height = canvas.offsetHeight || 180)
+      const size = canvas.offsetWidth || 290
+      canvas.width = size
+      canvas.height = size
+      const width = size
+      const height = size
+      const cx = width / 2
+      const cy = height / 2
+      const radius = size / 2
 
-      // Satin Champagne Rose Gold Metallic Gradient
-      const grad = ctx.createLinearGradient(0, 0, width, height)
-      grad.addColorStop(0, '#c2889a')
-      grad.addColorStop(0.2, '#daaab6')
-      grad.addColorStop(0.45, '#fae6ee')
-      grad.addColorStop(0.55, '#f4d5df')
-      grad.addColorStop(0.8, '#c88da0')
-      grad.addColorStop(1, '#9f5d74')
+      ctx.save()
+      ctx.beginPath()
+      ctx.arc(cx, cy, radius, 0, Math.PI * 2)
+      ctx.clip()
+
+      // Shimmering Rose Gold Glitter Metallic Gradient (matching Image 2)
+      const grad = ctx.createRadialGradient(cx, cy, 10, cx, cy, radius)
+      grad.addColorStop(0, '#fae3ec')
+      grad.addColorStop(0.35, '#e4b0c2')
+      grad.addColorStop(0.7, '#d393a8')
+      grad.addColorStop(1, '#a8657d')
       ctx.fillStyle = grad
       ctx.fillRect(0, 0, width, height)
 
-      // Delicate inner decorative border
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.45)'
-      ctx.lineWidth = 1.2
-      ctx.strokeRect(9, 9, width - 18, height - 18)
-
-      // Corner flourish dots
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.75)'
-      ;[
-        [15, 15],
-        [width - 15, 15],
-        [15, height - 15],
-        [width - 15, height - 15],
-      ].forEach(([cx, cy]) => {
+      // Dense sparkling glitter dots
+      for (let i = 0; i < 280; i++) {
+        const angle = Math.random() * Math.PI * 2
+        const dist = Math.random() * (radius - 6)
+        const x = cx + Math.cos(angle) * dist
+        const y = cy + Math.sin(angle) * dist
+        const dotSize = Math.random() * 2.2 + 0.5
+        const alpha = Math.random() * 0.7 + 0.3
+        ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`
         ctx.beginPath()
-        ctx.arc(cx, cy, 2.5, 0, Math.PI * 2)
-        ctx.fill()
-      })
-
-      // Soft diagonal silk luster lines
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.16)'
-      ctx.lineWidth = 18
-      for (let x = -width; x < width * 2; x += 38) {
-        ctx.beginPath()
-        ctx.moveTo(x, 0)
-        ctx.lineTo(x + height, height)
-        ctx.stroke()
-      }
-
-      // Sparkles
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.75)'
-      for (let i = 0; i < 48; i++) {
-        ctx.beginPath()
-        ctx.arc(
-          Math.random() * (width - 24) + 12,
-          Math.random() * (height - 24) + 12,
-          Math.random() * 2 + 0.6,
-          0,
-          Math.PI * 2
-        )
+        ctx.arc(x, y, dotSize, 0, Math.PI * 2)
         ctx.fill()
       }
 
-      // Top tiny cute motif
-      ctx.fillStyle = '#5c2a3e'
+      // Bright sparkle points
+      for (let i = 0; i < 22; i++) {
+        const angle = Math.random() * Math.PI * 2
+        const dist = Math.random() * (radius - 20)
+        const x = cx + Math.cos(angle) * dist
+        const y = cy + Math.sin(angle) * dist
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.95)'
+        ctx.beginPath()
+        ctx.arc(x, y, 2.5, 0, Math.PI * 2)
+        ctx.fill()
+      }
+
+      // Inner delicate gold ring border matching Image 2
+      ctx.strokeStyle = 'rgba(218, 178, 126, 0.65)'
+      ctx.lineWidth = 1.5
+      ctx.beginPath()
+      ctx.arc(cx, cy, radius - 10, 0, Math.PI * 2)
+      ctx.stroke()
+
+      // "Scratch to reveal" in cursive script
+      ctx.fillStyle = '#491d2d'
       ctx.textAlign = 'center'
       ctx.textBaseline = 'middle'
-      ctx.font = '600 10.5px "Cormorant Garamond", Georgia, serif'
-      ctx.fillText('✦  SAVE OUR DATE  ✦', width / 2, height * 0.22)
+      ctx.font = 'normal 46px "Imperial Script", "Parisienne", cursive'
+      ctx.fillText('Scratch to reveal', cx, cy - 14)
 
-      // Script headline: "Scratch to reveal"
-      ctx.fillStyle = '#451a2b'
-      ctx.font = 'normal 42px "Imperial Script", "Parisienne", cursive'
-      ctx.fillText('Scratch to reveal', width / 2, height * 0.48)
+      // "THE DAY WE SAY \"I DO\""
+      ctx.fillStyle = '#5f2b3e'
+      ctx.font = '600 11px "Cormorant Garamond", Georgia, serif'
+      ctx.fillText('THE DAY WE SAY "I DO"', cx, cy + 32)
 
-      // Subtitle
-      ctx.fillStyle = '#5c2a3e'
-      ctx.font = 'italic 400 13.5px "Cormorant Garamond", Georgia, serif'
-      ctx.fillText('The day we say “I do”', width / 2, height * 0.72)
-
-      // Cute scratch hint at bottom
-      ctx.fillStyle = 'rgba(92, 42, 62, 0.85)'
-      ctx.font = '600 9.5px "Cormorant Garamond", Georgia, serif'
-      ctx.fillText('♡  SCRATCH WITH LOVE  ♡', width / 2, height * 0.88)
+      ctx.restore()
     }
 
     if (document.fonts && document.fonts.ready) {
@@ -141,14 +133,14 @@ export default function Countdown({ data }) {
 
   return (
     <section className="paper-section countdown-section torn motion-scene" aria-labelledby="countdown-title">
-      {/* 1st: Scratch to reveal Date Card */}
-      <div className="scratch-block reveal">
-        <div className={`scratch-card-box ${revealed ? 'is-revealed' : ''}`}>
-          <div className="revealed-date-target">
-            <div className="date-reveal-card">
-              <div className="date-card-top-motif" aria-hidden="true">— &diams; —</div>
+      {/* Circular Scratch to Reveal Date Card (matching Image 2) */}
+      <div className="scratch-block circular reveal">
+        <div className={`scratch-circle-box ${revealed ? 'is-revealed' : ''}`}>
+          <div className="revealed-circle-target">
+            <div className="circle-date-content">
+              <div className="circle-date-top" aria-hidden="true">— &diams; —</div>
 
-              <div className="date-card-grid">
+              <div className="circle-date-grid">
                 <div className="date-col date-col-day">FRIDAY</div>
                 <div className="date-col date-col-center">
                   <span className="date-month">JANUARY</span>
@@ -158,13 +150,13 @@ export default function Countdown({ data }) {
                 <div className="date-col date-col-time">1:00 PM</div>
               </div>
 
-              <p className="date-card-footer-note">Our Forever Begins</p>
+              <p className="circle-date-footer">Our Forever Begins</p>
             </div>
           </div>
 
           {!revealed && (
             <div
-              className="scratch-foil"
+              className="scratch-foil circular"
               onPointerDown={(e) => {
                 isDrawing.current = true
                 handleScratch(e.clientX, e.clientY)
@@ -182,7 +174,7 @@ export default function Countdown({ data }) {
                 isDrawing.current = false
               }}
             >
-              <canvas ref={canvasRef} className="scratch-canvas" />
+              <canvas ref={canvasRef} className="scratch-canvas circular" />
             </div>
           )}
         </div>
@@ -190,15 +182,15 @@ export default function Countdown({ data }) {
         {!revealed && (
           <button
             type="button"
-            className="reveal-date-btn"
+            className="reveal-date-btn circular-btn"
             onClick={() => setRevealed(true)}
           >
-            ✨ Reveal The Date ✨
+            REVEAL THE DATE
           </button>
         )}
       </div>
 
-      {/* 2nd: Until we say "I do" countdown */}
+      {/* Until we say "I do" countdown (reception removed as per Image 3) */}
       <div className="countdown-wrap reveal">
         <h2 className="script" id="countdown-title">
           {begun ? 'Our celebration has begun' : 'Until we say “I do”'}
@@ -211,12 +203,6 @@ export default function Countdown({ data }) {
             </div>
           ))}
         </div>
-      </div>
-
-      {/* 3rd: Reception to follow */}
-      <div className="reception-section-badge reveal">
-        <h3 className="reception-title">RECEPTION TO FOLLOW</h3>
-        <p className="reception-time">Till 7:00 PM</p>
       </div>
     </section>
   )
