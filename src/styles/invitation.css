@@ -1845,7 +1845,7 @@ p {
 /* Venue Section - Matching reference image exactly */
 .closing-venue-wrap {
     position: relative;
-    padding: 42px 20px 38px;
+    padding: clamp(40px, 8vw, 64px) 24px clamp(36px, 7vw, 56px);
     background: var(--paper);
     z-index: 1;
     text-align: center;
@@ -1855,24 +1855,25 @@ p {
 
 .venue-highlight {
     margin: 0 auto;
-    max-width: 480px;
+    max-width: 720px;
     padding: 0;
     text-align: center;
 }
 
 .venue-calligraphy {
-    font: 400 clamp(40px, 10vw, 56px)/1.2 "Imperial Script", cursive;
+    font: 400 clamp(48px, 11vw, 76px)/1.22 "Imperial Script", cursive;
     color: var(--accent);
     margin: 0;
     text-align: center;
-    letter-spacing: .01em;
+    letter-spacing: .015em;
     text-wrap: balance;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-shadow: 0 0 0.4px currentColor;
 }
 
 .venue-calligraphy-gap {
-    height: 24px;
+    height: clamp(20px, 4vw, 32px);
 }
 
 
