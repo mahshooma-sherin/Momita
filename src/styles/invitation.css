@@ -1601,6 +1601,7 @@ p {
     max-width: 430px !important;
     margin: 0 auto !important;
     text-align: center;
+    z-index: 2;
 }
 
 @media(max-width: 380px) {
@@ -1615,20 +1616,6 @@ p {
     max-width: 380px;
     margin: 0 auto 12px;
     text-align: center;
-}
-
-.hero-cross-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 8px;
-}
-
-.hero-cross {
-    width: clamp(34px, 8.5vw, 46px);
-    height: auto;
-    display: block;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.16)) drop-shadow(0 0 14px rgba(255, 255, 255, 0.95));
 }
 
 .hero-verse-text {
@@ -1845,7 +1832,7 @@ p {
 /* Venue Section - Matching reference image exactly */
 .closing-venue-wrap {
     position: relative;
-    padding: clamp(40px, 8vw, 64px) 24px clamp(36px, 7vw, 56px);
+    padding: clamp(48px, 9vw, 76px) 24px clamp(42px, 8vw, 68px);
     background: var(--paper);
     z-index: 1;
     text-align: center;
@@ -1855,25 +1842,25 @@ p {
 
 .venue-highlight {
     margin: 0 auto;
-    max-width: 720px;
+    max-width: 840px;
     padding: 0;
     text-align: center;
 }
 
 .venue-calligraphy {
-    font: 400 clamp(48px, 11vw, 76px)/1.22 "Imperial Script", cursive;
+    font: 400 clamp(54px, 13vw, 92px)/1.2 "Imperial Script", cursive;
     color: var(--accent);
     margin: 0;
     text-align: center;
-    letter-spacing: .015em;
+    letter-spacing: .02em;
     text-wrap: balance;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-shadow: 0 0 0.4px currentColor;
+    text-shadow: 0 0 0.5px currentColor;
 }
 
 .venue-calligraphy-gap {
-    height: clamp(20px, 4vw, 32px);
+    height: clamp(24px, 5vw, 40px);
 }
 
 
