@@ -1748,18 +1748,24 @@ p {
 }
 
 @keyframes heroScrollFloat {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateX(-50%) translateY(0);
     }
+
     50% {
         transform: translateX(-50%) translateY(-5px);
     }
 }
 
 @keyframes arrowNudge {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(3px);
     }
@@ -1832,7 +1838,7 @@ p {
 /* Venue Section - Matching reference image exactly */
 .closing-venue-wrap {
     position: relative;
-    padding: clamp(48px, 9vw, 76px) 24px clamp(42px, 8vw, 68px);
+    padding: clamp(44px, 8vw, 68px) 20px clamp(40px, 7vw, 60px);
     background: var(--paper);
     z-index: 1;
     text-align: center;
@@ -1842,25 +1848,29 @@ p {
 
 .venue-highlight {
     margin: 0 auto;
-    max-width: 840px;
+    max-width: 600px;
     padding: 0;
     text-align: center;
 }
 
+.closing .venue-calligraphy,
 .venue-calligraphy {
-    font: 400 clamp(54px, 13vw, 92px)/1.2 "Imperial Script", cursive;
-    color: var(--accent);
-    margin: 0;
-    text-align: center;
-    letter-spacing: .02em;
-    text-wrap: balance;
+    font-family: "Imperial Script", cursive !important;
+    font-size: clamp(48px, 11vw, 68px) !important;
+    line-height: 1.32 !important;
+    font-weight: 400 !important;
+    color: var(--accent) !important;
+    margin: 0 !important;
+    text-align: center !important;
+    letter-spacing: .015em !important;
+    text-wrap: balance !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-shadow: 0 0 0.5px currentColor;
 }
 
 .venue-calligraphy-gap {
-    height: clamp(24px, 5vw, 40px);
+    height: clamp(20px, 4vw, 32px);
 }
 
 
@@ -2066,7 +2076,7 @@ p {
     overflow: hidden;
     background: color-mix(in srgb, var(--paper) 92%, #ffffff);
     border: 2.5px solid #dcb77c;
-    box-shadow: 
+    box-shadow:
         0 0 0 4.5px rgba(255, 255, 255, 0.95),
         0 0 0 6.5px #dcb77c,
         0 14px 36px color-mix(in srgb, var(--accent) 18%, transparent);
@@ -2074,7 +2084,7 @@ p {
 }
 
 .scratch-circle-box.is-revealed {
-    box-shadow: 
+    box-shadow:
         0 0 0 4.5px rgba(255, 255, 255, 0.95),
         0 0 0 6.5px #dcb77c,
         0 16px 42px color-mix(in srgb, var(--accent) 24%, transparent);
