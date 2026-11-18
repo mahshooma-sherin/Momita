@@ -1497,6 +1497,17 @@ p {
     text-shadow: none
 }
 
+.closing-venue-wrap {
+    position: relative;
+    padding: 28px 20px 24px;
+    background: var(--paper);
+    z-index: 1;
+}
+
+.closing-venue-wrap .schedule-info-card {
+    margin: 0 auto;
+}
+
 .closing-colophon {
     position: relative;
     padding: 10px 25px 100px;
