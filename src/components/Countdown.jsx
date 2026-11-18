@@ -16,7 +16,7 @@ export default function Countdown({ data }) {
     return () => clearInterval(id)
   }, [])
 
-  // Draw foil on canvas once mounted
+  // Draw cute foil on canvas once mounted
   useEffect(() => {
     if (revealed) return
     const canvas = canvasRef.current
@@ -24,23 +24,42 @@ export default function Countdown({ data }) {
     const ctx = canvas.getContext('2d')
 
     const draw = () => {
-      const width = (canvas.width = canvas.offsetWidth || 320)
-      const height = (canvas.height = canvas.offsetHeight || 140)
+      const width = (canvas.width = canvas.offsetWidth || 345)
+      const height = (canvas.height = canvas.offsetHeight || 180)
 
-      // Metallic blush rose gradient
+      // Satin Champagne Rose Gold Metallic Gradient
       const grad = ctx.createLinearGradient(0, 0, width, height)
-      grad.addColorStop(0, '#c78da0')
-      grad.addColorStop(0.25, '#deaab9')
-      grad.addColorStop(0.5, '#f4dbe3')
-      grad.addColorStop(0.75, '#cb90a3')
-      grad.addColorStop(1, '#a7677d')
+      grad.addColorStop(0, '#c2889a')
+      grad.addColorStop(0.2, '#daaab6')
+      grad.addColorStop(0.45, '#fae6ee')
+      grad.addColorStop(0.55, '#f4d5df')
+      grad.addColorStop(0.8, '#c88da0')
+      grad.addColorStop(1, '#9f5d74')
       ctx.fillStyle = grad
       ctx.fillRect(0, 0, width, height)
 
-      // Diagonal shimmer highlight stripes
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.22)'
-      ctx.lineWidth = 16
-      for (let x = -width; x < width * 2; x += 36) {
+      // Delicate inner decorative border
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.45)'
+      ctx.lineWidth = 1.2
+      ctx.strokeRect(9, 9, width - 18, height - 18)
+
+      // Corner flourish dots
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.75)'
+      ;[
+        [15, 15],
+        [width - 15, 15],
+        [15, height - 15],
+        [width - 15, height - 15],
+      ].forEach(([cx, cy]) => {
+        ctx.beginPath()
+        ctx.arc(cx, cy, 2.5, 0, Math.PI * 2)
+        ctx.fill()
+      })
+
+      // Soft diagonal silk luster lines
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.16)'
+      ctx.lineWidth = 18
+      for (let x = -width; x < width * 2; x += 38) {
         ctx.beginPath()
         ctx.moveTo(x, 0)
         ctx.lineTo(x + height, height)
@@ -48,12 +67,12 @@ export default function Countdown({ data }) {
       }
 
       // Sparkles
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.65)'
-      for (let i = 0; i < 40; i++) {
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.75)'
+      for (let i = 0; i < 48; i++) {
         ctx.beginPath()
         ctx.arc(
-          Math.random() * width,
-          Math.random() * height,
+          Math.random() * (width - 24) + 12,
+          Math.random() * (height - 24) + 12,
           Math.random() * 2 + 0.6,
           0,
           Math.PI * 2
@@ -61,17 +80,27 @@ export default function Countdown({ data }) {
         ctx.fill()
       }
 
-      // Script headline
-      ctx.fillStyle = '#482030'
+      // Top tiny cute motif
+      ctx.fillStyle = '#5c2a3e'
       ctx.textAlign = 'center'
       ctx.textBaseline = 'middle'
-      ctx.font = 'normal 38px "Imperial Script", "Parisienne", cursive'
-      ctx.fillText('Scratch to reveal', width / 2, height * 0.42)
+      ctx.font = '600 10.5px "Cormorant Garamond", Georgia, serif'
+      ctx.fillText('✦  SAVE OUR DATE  ✦', width / 2, height * 0.22)
 
-      // Kicker
-      ctx.fillStyle = '#633348'
-      ctx.font = '600 11.5px "Cormorant Garamond", Georgia, serif'
-      ctx.fillText('THE DAY WE SAY "I DO"', width / 2, height * 0.72)
+      // Script headline: "Scratch to reveal"
+      ctx.fillStyle = '#451a2b'
+      ctx.font = 'normal 42px "Imperial Script", "Parisienne", cursive'
+      ctx.fillText('Scratch to reveal', width / 2, height * 0.48)
+
+      // Subtitle
+      ctx.fillStyle = '#5c2a3e'
+      ctx.font = 'italic 400 13.5px "Cormorant Garamond", Georgia, serif'
+      ctx.fillText('The day we say “I do”', width / 2, height * 0.72)
+
+      // Cute scratch hint at bottom
+      ctx.fillStyle = 'rgba(92, 42, 62, 0.85)'
+      ctx.font = '600 9.5px "Cormorant Garamond", Georgia, serif'
+      ctx.fillText('♡  SCRATCH WITH LOVE  ♡', width / 2, height * 0.88)
     }
 
     if (document.fonts && document.fonts.ready) {
@@ -91,7 +120,7 @@ export default function Countdown({ data }) {
     const ctx = canvas.getContext('2d')
     ctx.globalCompositeOperation = 'destination-out'
     ctx.beginPath()
-    ctx.arc(x, y, 26, 0, Math.PI * 2)
+    ctx.arc(x, y, 28, 0, Math.PI * 2)
     ctx.fill()
 
     scratchCount.current += 1
@@ -112,18 +141,24 @@ export default function Countdown({ data }) {
 
   return (
     <section className="paper-section countdown-section torn motion-scene" aria-labelledby="countdown-title">
-      {/* 1st: Scratch to reveal Date */}
+      {/* 1st: Scratch to reveal Date Card */}
       <div className="scratch-block reveal">
         <div className={`scratch-card-box ${revealed ? 'is-revealed' : ''}`}>
           <div className="revealed-date-target">
             <div className="date-reveal-card">
-              <div className="date-col date-col-day">FRIDAY</div>
-              <div className="date-col date-col-center">
-                <span className="date-month">JANUARY</span>
-                <span className="date-num">29</span>
-                <span className="date-year">2027</span>
+              <div className="date-card-top-motif" aria-hidden="true">— &diams; —</div>
+
+              <div className="date-card-grid">
+                <div className="date-col date-col-day">FRIDAY</div>
+                <div className="date-col date-col-center">
+                  <span className="date-month">JANUARY</span>
+                  <span className="date-num">29</span>
+                  <span className="date-year">2027</span>
+                </div>
+                <div className="date-col date-col-time">1:00 PM</div>
               </div>
-              <div className="date-col date-col-time">1:00 PM</div>
+
+              <p className="date-card-footer-note">Our Forever Begins</p>
             </div>
           </div>
 
@@ -158,7 +193,7 @@ export default function Countdown({ data }) {
             className="reveal-date-btn"
             onClick={() => setRevealed(true)}
           >
-            REVEAL THE DATE
+            ✨ Reveal The Date ✨
           </button>
         )}
       </div>
