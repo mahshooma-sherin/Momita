@@ -1619,10 +1619,10 @@ p {
 }
 
 .hero-verse-text {
-    font-family: "Brittany Signature", cursive !important;
+    font-family: "Parisienne", cursive !important;
     font-weight: 400 !important;
-    font-size: clamp(20px, 5vw, 26px) !important;
-    line-height: 1.45 !important;
+    font-size: clamp(20px, 5vw, 25px) !important;
+    line-height: 1.4 !important;
     color: #5d2238;
     margin: 0 0 3px;
     text-shadow: 0 1px 8px rgba(255, 255, 255, 0.95), 0 0 16px rgba(255, 255, 255, 0.9);
@@ -1631,9 +1631,9 @@ p {
 }
 
 .hero-verse-ref {
-    font-family: "Brittany Signature", cursive !important;
+    font-family: "Parisienne", cursive !important;
     font-weight: 400 !important;
-    font-size: clamp(18px, 4.5vw, 22px) !important;
+    font-size: clamp(17px, 4.2vw, 21px) !important;
     line-height: 1.2 !important;
     color: #5d2238;
     margin: 0;
