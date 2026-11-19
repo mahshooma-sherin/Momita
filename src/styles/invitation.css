@@ -1594,7 +1594,7 @@ p {
 /* Hero Page (Page 1) harmonious arrangement without date/reception */
 .hero-copy {
     position: absolute;
-    top: 9.5% !important;
+    top: 8.5% !important;
     left: 8% !important;
     right: 8% !important;
     width: auto !important;
@@ -1606,34 +1606,34 @@ p {
 
 @media(max-width: 380px) {
     .hero-copy {
-        top: 7.5% !important;
+        top: 6.5% !important;
         left: 5% !important;
         right: 5% !important;
     }
 }
 
 .hero-verse {
-    max-width: 400px;
+    max-width: 420px;
     margin: 0 auto 16px;
     text-align: center;
 }
 
 .hero-verse-text {
-    font-family: "Parisienne", cursive !important;
+    font-family: "Brittany Signature", cursive !important;
     font-weight: 400 !important;
-    font-size: clamp(21px, 5.2vw, 26px) !important;
-    line-height: 1.38 !important;
+    font-size: clamp(22px, 5.5vw, 29px) !important;
+    line-height: 1.45 !important;
     color: #49283c;
     margin: 0 0 3px;
     text-shadow: 0 1px 8px rgba(255, 255, 255, 0.95), 0 0 16px rgba(255, 255, 255, 0.9);
-    letter-spacing: .01em;
+    letter-spacing: .02em;
     text-wrap: balance;
 }
 
 .hero-verse-ref {
-    font-family: "Parisienne", cursive !important;
+    font-family: "Brittany Signature", cursive !important;
     font-weight: 400 !important;
-    font-size: clamp(17px, 4.3vw, 21px) !important;
+    font-size: clamp(18px, 4.5vw, 23px) !important;
     line-height: 1.2 !important;
     color: #49283c;
     margin: 0;
